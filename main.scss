@@ -1,0 +1,53 @@
+
+.portfolio {
+    font-family: "arial";
+
+    .header {
+        display:none;
+    }
+
+    .intro {
+
+        h2 {
+            display:flex;
+            justify-content:flex-start;
+            margin:15%;
+        }
+
+        p {
+            font-size: 60px;
+            width:80%;
+            font-style: bold;
+            margin:auto;
+        }
+
+        img {
+            display:none;
+        }
+    }
+
+    .about {
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+        h3 {
+            margin-top: 40%;
+            font-size: 35px;
+            font-style: bold;
+        }
+
+        img {
+            width:70%;
+            margin:auto;
+            padding-bottom: 10%;
+        }
+
+        p {
+            margin-left:10%;
+            font-size: 20px;
+            font-weight: 500;
+            line-height:1.7;
+        }
+
+        }
+    }

@@ -7,7 +7,9 @@
 .portfolio .intro h2 {
   display: flex;
   justify-content: flex-start;
-  margin: 15%;
+  margin-top: 20%;
+  margin-bottom: 20%;
+  margin-left: 10%;
 }
 .portfolio .intro p {
   font-size: 60px;
@@ -30,7 +32,7 @@
 }
 .portfolio .about img {
   width: 70%;
-  margin: auto;
+  margin-top: 5%;
   padding-bottom: 10%;
 }
 .portfolio .about p {
@@ -38,4 +40,21 @@
   font-size: 20px;
   font-weight: 500;
   line-height: 1.7;
+}
+.portfolio .skills {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.portfolio .skills h4 {
+  margin-top: 30%;
+  font-size: 35px;
+  font-style: bold;
+}
+.portfolio .skills p {
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 1.5;
+  width: 70%;
+  text-align: center;
 }/*# sourceMappingURL=main.css.map */

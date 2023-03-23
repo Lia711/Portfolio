@@ -12,9 +12,9 @@
   margin-left: 10%;
 }
 .portfolio .intro p {
-  font-size: 60px;
+  font-size: 70px;
   width: 80%;
-  font-style: bold;
+  font-weight: bold;
   margin: auto;
 }
 .portfolio .intro img {
@@ -28,7 +28,7 @@
 .portfolio .about h3 {
   margin-top: 40%;
   font-size: 35px;
-  font-style: bold;
+  font-weight: bold;
 }
 .portfolio .about img {
   width: 70%;
@@ -57,4 +57,19 @@
   line-height: 1.5;
   width: 70%;
   text-align: center;
+  margin-bottom: 15%;
+}
+.portfolio .icons {
+  display: grid;
+  grid-template-columns: 130px 130px 130px;
+  grid-template-rows: 1fr 1fr 1fr;
+  gap: 20px;
+  justify-content: center;
+}
+.portfolio .icons .icons__boxes {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-weight: 600;
+  font-size: 18px;
 }/*# sourceMappingURL=main.css.map */

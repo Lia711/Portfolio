@@ -245,7 +245,7 @@ footer .footer__email {
     max-height: 230px;
   }
   .skills h4 {
-    margin: 0;
+    margin-top: 10%;
   }
   .skills p {
     margin-top: 5%;
@@ -254,6 +254,7 @@ footer .footer__email {
     font-weight: 500;
   }
   .icons {
+    padding-top: 10%;
     display: flex;
     flex-direction: row-reverse;
     justify-content: space-around;
@@ -274,5 +275,36 @@ footer .footer__email {
     font-size: 15px;
     font-weight: 600;
     text-align: center;
+  }
+  .projects {
+    display: grid;
+    grid-template-columns: 350px 350px 350px;
+    grid-template-rows: 1fr 1fr;
+    margin-top: 10%;
+    margin-bottom: 15%;
+    justify-content: center;
+    gap: 20px;
+  }
+  .projects h5 {
+    display: none;
+  }
+  .projects .projects__box {
+    display: block;
+    width: 100%;
+  }
+  .projects .projects__box h6 {
+    font-size: 16px;
+  }
+  .projects .projects__box h7 {
+    font-size: 35px;
+  }
+  .projects .projects__box p {
+    font-size: 14px;
+  }
+  .projects .projects__box img {
+    width: 90%;
+  }
+  .projects .project__box--hidden {
+    display: block;
   }
 }/*# sourceMappingURL=main.css.map */

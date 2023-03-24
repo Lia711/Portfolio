@@ -102,6 +102,10 @@
             }
         }
 
+        .project__header--desktop {
+            display:none;
+        }
+
         .projects {
             display:flex;
             flex-direction: column;
@@ -258,7 +262,6 @@
         display: flex;
         flex-direction:row;
         justify-content: baseline;
-        height:600px;
         margin-top:12%;
 
         h3 {
@@ -272,7 +275,7 @@
 
         .about__container {
             width:60%;
-            height:110vh;
+           
             display: flex;
             flex-direction: column;
             margin-left:5%;
@@ -332,13 +335,25 @@
         }
     }
 
-    .projects {
+    .project__header--desktop {
+        display: block;
         
+        
+        p {
+            margin-top:10%;
+            margin-left: 40%;
+            font-size: 35px;
+            font-weight: bold;
+        }
+    }
+
+    .projects {
         display: grid;
-        grid-template-columns: 350px 350px 350px;
+        grid-template-columns: 3fr 3fr 3fr;
         grid-template-rows: 1fr 1fr;
-        margin-top:10%;
-        margin-bottom:15%;
+        margin-top:5%;
+        margin-left:5%;
+        margin-right:5%;
         justify-content: center;
         gap:20px;
         
@@ -369,11 +384,14 @@
             }
         }
 
-        .project__box--hidden {
-            display:block;
-            
-        }
+        
     }
 
 }
+
+/*
+to do: 
+add my projects header
+fix footer
+*/
 

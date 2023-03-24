@@ -1,63 +1,64 @@
 * {
   margin: 0;
   padding: 0;
-}
-
-.portfolio {
   font-family: "arial";
 }
-.portfolio .header {
+
+.header {
   display: none;
 }
-.portfolio .intro h2 {
+
+.intro h2 {
   display: flex;
   justify-content: flex-start;
   margin-top: 20%;
   margin-bottom: 20%;
   margin-left: 10%;
 }
-.portfolio .intro p {
+.intro p {
   font-size: 70px;
   width: 80%;
   font-weight: bold;
   margin: auto;
 }
-.portfolio .intro img {
+.intro img {
   display: none;
 }
-.portfolio .about {
+
+.about {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-.portfolio .about h3 {
+.about h3 {
   margin-top: 40%;
   font-size: 35px;
   font-weight: bold;
 }
-.portfolio .about img {
+.about img {
   width: 70%;
   margin-top: 5%;
   padding-bottom: 10%;
 }
-.portfolio .about p {
+.about p {
   margin-left: 5%;
   margin-right: 5%;
   font-size: 20px;
   font-weight: 500;
   line-height: 1.7;
 }
-.portfolio .skills {
+
+.skills {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-.portfolio .skills h4 {
+.skills h4 {
   margin-top: 30%;
   font-size: 35px;
   font-style: bold;
 }
-.portfolio .skills p {
+.skills p {
   font-size: 18px;
   font-weight: 500;
   line-height: 1.5;
@@ -65,57 +66,59 @@
   text-align: center;
   margin-bottom: 15%;
 }
-.portfolio .icons {
+
+.icons {
   display: grid;
   grid-template-columns: 130px 130px 130px;
   grid-template-rows: 1fr 1fr 1fr;
   gap: 20px;
   justify-content: center;
 }
-.portfolio .icons .icons__boxes {
+.icons .icons__boxes {
   display: flex;
   flex-direction: column;
   align-items: center;
   font-weight: 600;
   font-size: 18px;
 }
-.portfolio .projects {
+
+.projects {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-.portfolio .projects h5 {
+.projects h5 {
   margin-top: 30%;
   margin-bottom: 10%;
   font-size: 35px;
   font-weight: bold;
 }
-.portfolio .projects .projects__box {
+.projects .projects__box {
   width: 90%;
   margin-bottom: 15%;
 }
-.portfolio .projects .projects__box img {
+.projects .projects__box img {
   width: 90%;
   margin-left: 5%;
 }
-.portfolio .projects .projects__box h6 {
+.projects .projects__box h6 {
   margin-top: 5%;
   font-size: 20px;
   margin-left: 5%;
 }
-.portfolio .projects .projects__box h7 {
+.projects .projects__box h7 {
   font-size: 40px;
   font-weight: bold;
   margin-left: 5%;
 }
-.portfolio .projects .projects__box p {
+.projects .projects__box p {
   margin-top: 5%;
   font-size: 20px;
   width: 90%;
   line-height: 1.5;
   margin-left: 5%;
 }
-.portfolio .projects .projects__box .project__button {
+.projects .projects__box .project__button {
   margin-left: 5%;
   background-color: white;
   color: black;
@@ -127,29 +130,80 @@
   padding: 10px 15px;
   margin-top: 5%;
 }
-.portfolio .projects .project__box--hidden {
+.projects .project__box--hidden {
   display: none;
 }
-.portfolio footer {
+
+footer {
   background-color: black;
   padding: 80px 80px;
   display: grid;
   grid-template-areas: "icon icon icon" "email email email";
   justify-content: center;
   row-gap: 30px;
+  -moz-column-gap: 10px;
+       column-gap: 10px;
 }
-.portfolio footer .footer__image {
+footer .footer__image {
   background-color: white;
   border: 1px solid white;
-  border-radius: 20px;
-  padding: 5px;
+  border-radius: 50%;
+  padding: 10px;
   width: 50%;
+  height: 50%;
   grid-area: icon;
 }
-.portfolio footer .footer__email {
+footer .footer__email {
   text-decoration: none;
   color: white;
   font-size: 20px;
   font-weight: lighter;
   grid-area: email;
+}
+
+@media screen and (min-width: 768px) {
+  .header {
+    display: flex;
+    justify-content: space-between;
+  }
+  .header h1 {
+    font-size: 17px;
+    margin: 5%;
+  }
+  .header nav {
+    margin: 5%;
+  }
+  .header nav .header__button {
+    background-color: white;
+    color: black;
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: 500;
+    padding: 10px 15px;
+    border: 2px solid white;
+  }
+  .header nav .header__button:hover {
+    border: 2px solid black;
+    border-radius: 5px;
+  }
+  .intro {
+    display: grid;
+    grid-template-areas: "intro pic" "about pic";
+  }
+  .intro h2 {
+    margin-top: 10%;
+    margin-bottom: 0;
+    grid-area: intro;
+  }
+  .intro p {
+    font-size: 50px;
+    margin-left: 10%;
+    margin-top: 0;
+    grid-area: about;
+  }
+  .intro img {
+    display: block;
+    width: 90%;
+    grid-area: pic;
+  }
 }/*# sourceMappingURL=main.css.map */

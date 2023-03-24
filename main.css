@@ -229,14 +229,17 @@ footer .footer__email {
   }
   .about .about__container {
     width: 60%;
+    margin-bottom: 5%;
     display: flex;
     flex-direction: column;
     margin-left: 5%;
+    margin-right: 3%;
   }
   .about .about__container .about__header--hidden {
     display: block;
     margin-left: 5%;
-    margin-bottom: 5%;
+    margin-bottom: 10%;
+    margin-top: 0;
   }
   .about .about__container p {
     font-size: 15px;

@@ -214,6 +214,8 @@ footer .footer__email {
     display: flex;
     flex-direction: row;
     justify-content: baseline;
+    height: 600px;
+    margin-top: 12%;
   }
   .about h3 {
     display: none;
@@ -238,5 +240,39 @@ footer .footer__email {
     font-size: 15px;
     font-weight: 500;
     margin-right: 5%;
+  }
+  .skills {
+    max-height: 230px;
+  }
+  .skills h4 {
+    margin: 0;
+  }
+  .skills p {
+    margin-top: 5%;
+    width: 40%;
+    font-size: 15px;
+    font-weight: 500;
+  }
+  .icons {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-around;
+    width: 80%;
+    margin: auto;
+  }
+  .icons .icons__boxes {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+  }
+  .icons .icons__boxes .icons__image {
+    width: 60px;
+    height: 60px;
+  }
+  .icons .icons__boxes p {
+    font-size: 15px;
+    font-weight: 600;
+    text-align: center;
   }
 }/*# sourceMappingURL=main.css.map */

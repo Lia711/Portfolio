@@ -258,6 +258,8 @@
         display: flex;
         flex-direction:row;
         justify-content: baseline;
+        height:600px;
+        margin-top:12%;
 
         h3 {
             display:none;
@@ -285,6 +287,46 @@
                 font-size: 15px;
                 font-weight:500;
                 margin-right:5%;
+            }
+        }
+    }
+
+    .skills {
+        max-height:230px;
+        h4 {
+            margin:0;
+        }
+
+        p {
+            margin-top:5%;
+            width:40%;
+            font-size: 15px;
+            font-weight:500;
+        }
+    }
+
+    .icons {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-around;
+        width:80%;
+        margin:auto;
+
+        .icons__boxes {
+            display: flex;
+            flex-direction:column;
+            align-items: center;
+            gap:15px;
+
+            .icons__image {
+                width:60px;
+                height:60px;
+            }
+
+            p {
+                font-size: 15px;
+                font-weight: 600;
+                text-align: center;
             }
         }
     }

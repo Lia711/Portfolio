@@ -38,7 +38,6 @@
 .about img {
   width: 70%;
   margin-top: 5%;
-  margin-left: 15%;
   padding-bottom: 10%;
 }
 .about p {
@@ -48,6 +47,9 @@
   font-size: 20px;
   font-weight: 500;
   line-height: 1.7;
+}
+.about .about__header--hidden {
+  display: none;
 }
 
 .skills {
@@ -207,5 +209,34 @@ footer .footer__email {
     display: block;
     width: 90%;
     grid-area: pic;
+  }
+  .about {
+    display: flex;
+    flex-direction: row;
+    justify-content: baseline;
+  }
+  .about h3 {
+    display: none;
+  }
+  .about img {
+    width: 30%;
+    margin-left: 10%;
+  }
+  .about .about__container {
+    width: 60%;
+    height: 110vh;
+    display: flex;
+    flex-direction: column;
+    margin-left: 5%;
+  }
+  .about .about__container .about__header--hidden {
+    display: block;
+    margin-left: 5%;
+    margin-bottom: 5%;
+  }
+  .about .about__container p {
+    font-size: 15px;
+    font-weight: 500;
+    margin-right: 5%;
   }
 }/*# sourceMappingURL=main.css.map */

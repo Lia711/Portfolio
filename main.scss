@@ -5,200 +5,198 @@
     font-family: "arial";
 }
 
+.header {
+    display:none;
+}
 
-    .header {
+.intro {
+
+    h2 {
+        display:flex;
+        justify-content:flex-start;
+        margin-top:20%;
+        margin-bottom: 20%;
+        margin-left: 10%;
+    }
+
+    p {
+        font-size: 70px;
+        width:80%;
+        font-weight: bold;
+        margin:auto;
+    }
+
+    img {
         display:none;
     }
+}
 
-    .intro {
-
-        h2 {
-            display:flex;
-            justify-content:flex-start;
-            margin-top:20%;
-            margin-bottom: 20%;
-            margin-left: 10%;
-        }
-
-        p {
-            font-size: 70px;
-            width:80%;
-            font-weight: bold;
-            margin:auto;
-        }
-
-        img {
-            display:none;
-        }
+.about {
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    
+    h3 {
+        margin-top: 40%;
+        font-size: 35px;
+        font-weight: bold;
     }
 
-    .about {
+    img {
+        width:70%;
+        margin-top: 5%;
+        padding-bottom: 10%;
+    }
+
+    p {
+        margin-left:5%;
+        margin-right:5%;
+        margin-bottom:5%;
+        font-size: 20px;
+        font-weight: 500;
+        line-height:1.7;
+    }
+
+    .about__header--hidden {
+        display: none;
+    }
+
+}
+
+    .skills {
         display:flex;
         flex-direction: column;
         align-items: center;
         
-        h3 {
-            margin-top: 40%;
+        h4 {
+            margin-top: 30%;
+            font-size: 35px;
+            font-style: bold;
+        }
+
+        p {
+            font-size: 18px;
+            font-weight: 500;
+            line-height:1.5;
+            width: 70%;
+            text-align: center;
+            margin-bottom:15%;  
+        }
+    }
+
+    .icons {
+        display:grid;
+        grid-template-columns: 130px 130px 130px;
+        grid-template-rows: 1fr 1fr 1fr;
+        gap: 20px;
+        justify-content: center;
+        
+
+        .icons__boxes {
+            display:flex;
+            flex-direction: column;
+            align-items: center;
+            font-weight: 600;
+            font-size:18px;
+        }
+    }
+
+    .project__header--desktop {
+        display:none;
+    }
+
+    .projects {
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+
+        h5 {
+            margin-top: 30%;
+            margin-bottom:10%;
             font-size: 35px;
             font-weight: bold;
         }
 
-        img {
-            width:70%;
-            margin-top: 5%;
-            padding-bottom: 10%;
-        }
+        .projects__box {
+            width:90%;
+            margin-bottom:15%;
 
-        p {
-            margin-left:5%;
-            margin-right:5%;
-            margin-bottom:5%;
-            font-size: 20px;
-            font-weight: 500;
-            line-height:1.7;
-        }
-
-        .about__header--hidden {
-            display: none;
-        }
-
-    }
-
-        .skills {
-            display:flex;
-            flex-direction: column;
-            align-items: center;
-            
-            h4 {
-                margin-top: 30%;
-                font-size: 35px;
-                font-style: bold;
-            }
-
-            p {
-                font-size: 18px;
-                font-weight: 500;
-                line-height:1.5;
-                width: 70%;
-                text-align: center;
-                margin-bottom:15%;  
-            }
-        }
-
-        .icons {
-            display:grid;
-            grid-template-columns: 130px 130px 130px;
-            grid-template-rows: 1fr 1fr 1fr;
-            gap: 20px;
-            justify-content: center;
-            
-
-            .icons__boxes {
-                display:flex;
-                flex-direction: column;
-                align-items: center;
-                font-weight: 600;
-                font-size:18px;
-            }
-        }
-
-        .project__header--desktop {
-            display:none;
-        }
-
-        .projects {
-            display:flex;
-            flex-direction: column;
-            align-items: center;
-
-            h5 {
-                margin-top: 30%;
-                margin-bottom:10%;
-                font-size: 35px;
-                font-weight: bold;
-            }
-
-            .projects__box {
+            img {
                 width:90%;
-                margin-bottom:15%;
-
-                img {
-                    width:90%;
-                    margin-left:5%;
-                    
-                }
-
-                h6 {
-                    margin-top:5%;
-                    font-size: 20px;
-                    margin-left:5%;
-                }
-
-                h7 {
-                    font-size: 40px;
-                    font-weight: bold;
-                    margin-left:5%;
-                }
-
-                p {
-                    margin-top:5%;
-                    font-size:20px;
-                    width:90%;
-                    line-height: 1.5;
-                    margin-left:5%;
-                }
-
-                .project__button {
-                    margin-left:5%;
-                    background-color: white;
-                    color:black;
-                    border:2px solid black;
-                    border-radius:5px;
-                    text-decoration:none;
-                    font-size:15px;
-                    font-weight: bold;
-                    padding:10px 15px;
-                    margin-top:5%;
-
-                }
-            }
-
-            .project__box--hidden {
-                display:none;
-            }
-        }
-
-        footer {
-            background-color:black;
-            padding: 80px 80px;
-            display:grid;
-            grid-template-areas: 
-                "icon icon icon"
-                "email email email";
-            justify-content: center;
-            row-gap: 30px;
-            column-gap: 10px;
-
-            .footer__image {
-                background-color: white;
-                border:1px solid white;
-                border-radius:50%;
-                padding:10px;
-                width:50%;
-                height:50%;
-                grid-area:icon;
+                margin-left:5%;
                 
             }
 
-            .footer__email {
-                text-decoration: none;
-                color:white;
-                font-size:20px;
-                font-weight: lighter;
-                grid-area:email;
+            h6 {
+                margin-top:5%;
+                font-size: 20px;
+                margin-left:5%;
             }
 
+            h7 {
+                font-size: 40px;
+                font-weight: bold;
+                margin-left:5%;
+            }
+
+            p {
+                margin-top:5%;
+                font-size:20px;
+                width:90%;
+                line-height: 1.5;
+                margin-left:5%;
+            }
+
+            .project__button {
+                margin-left:5%;
+                background-color: white;
+                color:black;
+                border:2px solid black;
+                border-radius:5px;
+                text-decoration:none;
+                font-size:15px;
+                font-weight: bold;
+                padding:10px 15px;
+                margin-top:5%;
+
+            }
         }
+
+        .project__box--hidden {
+            display:none;
+        }
+    }
+
+    footer {
+        background-color:black;
+        padding: 60px;
+        display:flex;
+        flex-direction: column;
+        align-items:center;
+        justify-content: center;
+
+        .footer__images {
+            padding-bottom: 40px;
+        }
+
+        .footer__image {
+            background-color: white;
+            border: 1px solid white;
+            border-radius:50%;
+            padding:10px;
+            grid-area:icon;
+            margin:0px 7px;
+        }
+
+        .footer__email {
+            text-decoration: none;
+            color:white;
+            font-size:20px;
+            font-weight: lighter;
+            grid-area:email;
+        }
+
+    }
 
 
 
@@ -390,11 +388,47 @@
         
     }
 
+    .footer {
+        margin-top:120px;
+        padding: 40px 80px;
+        display:flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        align-items: center;
+
+        .footer__image {
+            margin:3px;
+        }
+
+        .footer__images {
+            display: flex;
+            flex-direction: row;
+            padding-bottom: 0;
+
+            .footer__image--git {
+                order: 2;
+                margin:auto;
+                width:20px;
+                height:20px;
+            }
+
+            .footer__image--linkedin {
+                order: 3;
+                margin:0px 15px;
+                width:20px;
+                height:20px;
+            }
+
+            .footer__image--cv {
+                order: 1;
+                margin:0px 15px;
+                width:20px;
+                height:20px;
+            }
+    }
+    }
+
 }
 
-/*
-to do: 
-add my projects header
-fix footer
-*/
+
 

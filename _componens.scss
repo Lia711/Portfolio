@@ -138,6 +138,7 @@
                 width:90%;
                 line-height: 1.5;
                 margin-left:5%;
+
             }
 
             .project__button {
@@ -152,6 +153,10 @@
                 padding:10px 15px;
                 margin-top:5%;
 
+            }
+
+            .project__button:hover {
+                background-color:gray;
             }
         }
 

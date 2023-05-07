@@ -11,35 +11,38 @@
     <main class="portfolio">
 
         <header class="header">
-            <h1>Joe Bloggs</h1>
+            <h1>Liana Petrova</h1>
             <nav>
                 <button class="header__button">Home</button>
-                <button class="header__button">About</button>
-                <button class="header__button">Projects</button>
-                <button class="header__button">Get in Touch</button>
+                <a href="#about-section" class="header__button">About</a>
+                <a href="#projects-section" class="header__button">Projects</a>
+                <a href="#contacts" class="header__button">Get in Touch</a>
             </nav>
         </header>
     
         <div class="intro">
-            <h2>&#128075; Hey! I'm Joe Bloggs</h2>
+            <h2>&#128075; Hey! I'm Liana Petrova</h2>
             <p>A Junior Software Developer based in the UK.</p>
             <img class="intro__image" src="./images/side.svg" alt="Photo of a man"/>
         </div>
 
-        <div class="about">
-            <h3 class="about__header">About Me</h3>
-            <img class="about__image" src="./images/person.svg" alt="Stylized image of person with a laptop"/>
+        <div class="about" id="about-section">
+            <h3 class="about__header" >About Me</h3>
+            <img class="about__image" src="./images/me.jpg" alt="Stylized image of person with a laptop"/>
 
             <div class="about__container">
                 <h3 class="about__header--hidden">About Me</h3>
-                <p>Nulla ac praesent tempor, orci sit nunc eget. Aliquam urna nunc, viverra sed tortor non. Id at pellentesque mauris at tincidunt venenatis urna mus. Sodales pretium tempus tincidunt tellus in imperdiet. Integer fames maecenas amet, consequat. Et cursus gravida enim lorem urna, vivamus pulvinar porttitor. Ultrices neque nec feugiat ullamcorper ultricies ante sagittis commodo.</p>
-                <p>Nunc malesuada amet at eget consectetur sit. Nibh in ut diam nulla sed porttitor et. At neque tellus convallis urna, sodales neque. In enim auctor diam nunc duis rutrum adipiscing pellentesque eu. In sollicitudin neque dictum neque proin pretium ante. Ac bibendum vestibulum ullamcorper pellentesque scelerisque. Neque senectus eu dictum ultricies tellus nisl eget sem libero. Eu sit quis vestibulum donec cras elementum.</p>
+                <p> A highly motivated individual who has recently graduated with a BSc (Hons) in Physics with
+                    Astrophysics and Cosmology at King’s College London. I am analytically minded and passionate
+                    about science and technology. Ambitious and competitive, I am a results-oriented person who
+                    also thrives in a collaborative environment.
+                    </p>
             </div>
         </div>
 
-        <div class="skills">
+        <div class="skills" >
             <h4>Technical Skills</h4>
-            <p>Maecenas accumsan tincidunt id et in ut diam sit. Metus, nec, augue urna gravida nisl, tortor sapien nec sollicitudin.</p>
+            <p>Abilities in the following languages, libraries and frameworks: </p>
         </div>
 
         <div class="icons">
@@ -88,37 +91,55 @@
                     <p>Git</p>
             </div>
         </div>
-        <div class="project__header--desktop"> 
+        <div id="projects-section" class="project__header--desktop"> 
             <p>My Projects</p>
 
         </div>
 
-        <div class="projects">
-            <h5>My Projects</h5>
+        <div class="projects" >
+            <h5 >My Projects</h5>
             <div class="projects__box">
-                <img class="project__image" src="./images/project.jpg" alt="Image of 3D art showcasing to coding"/>
+                <img class="project__image" src="./images/calculator.jpg" alt="Image of 3D art showcasing to coding"/>
+                <h6>JavaScript</h6>
+                <h7>Calculator</h7>
+                <p>Working calculator that accepts two inputs and handles basic operations including negatives, percentages, removing last digit, chaining reactions and clearing.</p>
+                <a class="project__button" href="https://github.com/Lia711/calculator" target="_blank" >Code &lt;/&gt;</a>
+                <button class="project__button" href="https://lia711.github.io/game/" target="_blank" >Preview &lt;/&gt;</button>
+            </div>
+
+            <div class="projects__box">
+                <img class="project__image" src="./images/game.jpg" alt="Image of 3D art showcasing to coding"/>
+                <h6>JavaScript</h6>
+                <h7>Game Project</h7>
+                <p>Who wants to be a millionaire-style quiz game including 15 questions, indications for right and wrong answers, money tree save points and skip question options. </p>
+                <a class="project__button" href="https://github.com/Lia711/game" target="_blank" >Code &lt;/&gt;</a>
+                <button class="project__button">Preview &lt;/&gt;</button>
+            </div>
+
+            <div class="projects__box project__box--hidden">
+                <img class="project__image" src="./images/beers.jpg" alt="Image of 3D art showcasing to coding"/>
                 <h6>REACT</h6>
-                <h7>Client Project</h7>
-                <p>Maecenas accumsan tincidunt id et in ut diam sit. Metus, nec, augue urna gravida nisl, tortor sapien nec sollicitudin.</p>
-                <button class="project__button">Code &lt;/&gt;</button>
+                <h7>Beer Api</h7>
+                <p>Application that takes data from Punk API to display the different beers. Features page switching, multiple stackable filters, search bar and click for more info on each beer.</p>
+                <a class="project__button" href="https://github.com/Lia711/project-punk-api" target="_blank" >Code &lt;/&gt;</a>
                 <button class="project__button">Preview &lt;/&gt;</button>
             </div>
 
             <div class="projects__box">
-                <img class="project__image" src="./images/project.jpg" alt="Image of 3D art showcasing to coding"/>
-                <h6>REACT</h6>
-                <h7>Client Project</h7>
-                <p>Maecenas accumsan tincidunt id et in ut diam sit. Metus, nec, augue urna gravida nisl, tortor sapien nec sollicitudin.</p>
-                <button class="project__button">Code &lt;/&gt;</button>
+                <img class="project__image" src="./images/tickets.jpg" alt="Image of 3D art showcasing to coding"/>
+                <h6>React</h6>
+                <h7>Ticket Tracker</h7>
+                <p> Simple REACT application for tracking tickets of an imported data array of employees. Features counter for addition and subtraction of tickets for each employee. (NOT DEPLOYED)</p>
+                <a class="project__button" href="https://github.com/Lia711/ticket-tracker" target="_blank" >Code &lt;/&gt;</a>
                 <button class="project__button">Preview &lt;/&gt;</button>
             </div>
 
-            <div class="projects__box">
-                <img class="project__image" src="./images/project.jpg" alt="Image of 3D art showcasing to coding"/>
+            <div class="projects__box project__box--hidden">
+                <img class="project__image" src="./images/morsecode.jpg" alt="Image of 3D art showcasing to coding"/>
                 <h6>REACT</h6>
-                <h7>Client Project</h7>
-                <p>Maecenas accumsan tincidunt id et in ut diam sit. Metus, nec, augue urna gravida nisl, tortor sapien nec sollicitudin.</p>
-                <button class="project__button">Code &lt;/&gt;</button>
+                <h7>Morse Code Translator</h7>
+                <p> Small application that translates English text to Morse Code and the reverse. Updates as user types and includes numbers and special characters.</p>
+                <a class="project__button" href="https://github.com/Lia711/morse-code-translator" target="_blank" >Code &lt;/&gt;</a>
                 <button class="project__button">Preview &lt;/&gt;</button>
             </div>
 
@@ -126,38 +147,20 @@
                 <img class="project__image" src="./images/project.jpg" alt="Image of 3D art showcasing to coding"/>
                 <h6>REACT</h6>
                 <h7>Client Project</h7>
-                <p>Maecenas accumsan tincidunt id et in ut diam sit. Metus, nec, augue urna gravida nisl, tortor sapien nec sollicitudin.</p>
-                <button class="project__button">Code &lt;/&gt;</button>
-                <button class="project__button">Preview &lt;/&gt;</button>
-            </div>
-
-            <div class="projects__box project__box--hidden">
-                <img class="project__image" src="./images/project.jpg" alt="Image of 3D art showcasing to coding"/>
-                <h6>REACT</h6>
-                <h7>Client Project</h7>
-                <p>Maecenas accumsan tincidunt id et in ut diam sit. Metus, nec, augue urna gravida nisl, tortor sapien nec sollicitudin.</p>
-                <button class="project__button">Code &lt;/&gt;</button>
-                <button class="project__button">Preview &lt;/&gt;</button>
-            </div>
-
-            <div class="projects__box project__box--hidden">
-                <img class="project__image" src="./images/project.jpg" alt="Image of 3D art showcasing to coding"/>
-                <h6>REACT</h6>
-                <h7>Client Project</h7>
-                <p>Maecenas accumsan tincidunt id et in ut diam sit. Metus, nec, augue urna gravida nisl, tortor sapien nec sollicitudin.</p>
+                <p> Extensive group project for fully built website with multiple pages and purposes. Features Firebase authentication login. (UNFINISHED)</p>
                 <button class="project__button">Code &lt;/&gt;</button>
                 <button class="project__button">Preview &lt;/&gt;</button>
             </div>
 
         </div>
 
-        <footer class="footer">
+        <footer id="contacts" class="footer">
             <div class="footer__images">
-                <a class="footer__image footer__image--git" href="#"><img src="./images/github.svg" alt="GitHub icon"/></a>
+                <a class="footer__image footer__image--git" href="https://github.com/Lia711" target="_blank"><img src="./images/github.svg" alt="GitHub icon"/></a>
                 <a class="footer__image footer__image--linkedin" href="#"><img src="./images/linkedin.svg" alt="LinkedIn icon"/></a>
                 <a class="footer__image footer__image--cv" href="#"><img src="./images/cv.svg" alt="CV icon"/></a>
             </div>
-            <a href="#" class="footer__email">joebloggs@gmail.com</a>
+            <a href="#" class="footer__email">lianapetrova00@gmail.com</a>
         </footer>
 
     </main>
